@@ -9,6 +9,6 @@ public class WorkerController {
     @GetMapping("/")
     @ResponseBody
     public String main(){
-        return "Hello World 88";
+        return "Hello World";
     }
 }
