@@ -19,7 +19,7 @@ public class EmployeeService {
         return employeeRepository.findById(id).orElse(null);
     }
 
-    public void update(Employee employee){
+    public void write(Employee employee){
         employeeRepository.save(employee);
     }
 }
