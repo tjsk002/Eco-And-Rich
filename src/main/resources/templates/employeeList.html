@@ -24,6 +24,7 @@
 </style>
 <body>
     <div class="layout">
+        <h2>직원 목록 페이지</h2>
         <table border="1">
             <thead>
             <tr>
@@ -42,7 +43,9 @@
             </thead>
             <tbody>
                 <tr th:each="employee : ${list}">
-                    <td th:text="${employee.employeeId}"></td>
+                    <td>
+                        <a th:text="${employee.employeeId}" th:href="@{/employee/detail(id=${employee.employeeId})}"></a>
+                    </td>
                     <td th:text="${employee.firstName}"></td>
                     <td th:text="${employee.lastName}"></td>
                     <td th:text="${employee.email}"></td>
