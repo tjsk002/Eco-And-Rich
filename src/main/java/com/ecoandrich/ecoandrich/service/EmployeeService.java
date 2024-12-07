@@ -10,8 +10,13 @@ import java.util.List;
 public class EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
+
     public List<Employee> employeeList(){
         return employeeRepository.findAll();
+    }
+
+    public Employee getEmployeeById(Integer id) {
+        return employeeRepository.findById(id).orElse(null);
     }
 
     public void update(Employee employee){
