@@ -1,10 +1,8 @@
 # Eco-And-Rich
 에코앤리치 과제
+- spring boot 3.4.0 / jdk 23.0.1
 
-#### spring boot 3.4.0 / jdk 23.0.1
-
-#### Back-end
-### 코딩과제 목표
+### 코딩과제 목표 <Back-end>
 - 개발 아이디어 및 지원자의 보유 기술의 활용도를 보기 위함입니다.
 - 기본적인 주제(과제)를 어떻게 풀어나가는지 보는것이 주 목적입니다.
 
@@ -44,4 +42,4 @@
 기타 문의 사항은 nohmw@econrich.com 으로 회신 부탁드립니다.
 
 ### API 문서 참고 (Notion)
-https://www.notion.so/API-15754732a5f680068a50e60e977022ff?pvs=4
+- https://www.notion.so/API-15754732a5f680068a50e60e977022ff?pvs=4
