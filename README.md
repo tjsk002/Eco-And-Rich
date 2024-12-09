@@ -42,3 +42,6 @@
 - AWS 미사용 시에도 상시 확인 가능한 URL을 공유해주시면 됩니다.
 
 기타 문의 사항은 nohmw@econrich.com 으로 회신 부탁드립니다.
+
+### API 문서 참고 (Notion)
+https://www.notion.so/API-15754732a5f680068a50e60e977022ff?pvs=4
