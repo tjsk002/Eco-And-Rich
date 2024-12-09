@@ -1,5 +1,6 @@
 package com.ecoandrich.ecoandrich.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -18,6 +19,8 @@ public class Department {
     @Column(name = "manager_id")
     private Integer managerId;
 
-    @Column(name = "location_id")
-    private int locationId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "location_id", referencedColumnName = "location_id")
+    @JsonManagedReference
+    private Location location;
 }

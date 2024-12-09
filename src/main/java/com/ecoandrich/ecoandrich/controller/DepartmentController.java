@@ -18,11 +18,11 @@ public class DepartmentController {
 
     @GetMapping("/department/list")
     public ResponseEntity<List<Department>> departmentList() {
-        List<Department> departmentList = departmentService.departmentList();
 
+        List<Department> departmentList = departmentService.getDepartmentList();
         if (departmentList != null && !departmentList.isEmpty()) {
             return ResponseEntity.ok(departmentList);
-        } else {
+        }else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ArrayList<>());
         }
     }
